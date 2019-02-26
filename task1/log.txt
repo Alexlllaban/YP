@@ -1,0 +1,11 @@
+commit ee714ce90db7c65c7c496782efd7175280bcba16 (HEAD -> master, origin/master)
+Author: Alex <alexlllaban@gmail.com>
+Date:   Tue Feb 26 10:52:20 2019 +0300
+
+    add status.txt
+
+commit ee3c62bc60ee621577fb0263344606df86169644
+Author: Alex <alexlllaban@gmail.com>
+Date:   Tue Feb 19 12:54:41 2019 +0300
+
+    add .gitignore
