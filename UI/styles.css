@@ -1,0 +1,295 @@
+body {
+    background-color: rgb(233, 244, 255);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 52px;
+    background-color: rgba(255, 255, 255, 0.97);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.logo{
+    font-family: pacifico;
+    display: inline-block;
+    margin-left: 1%;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 150%;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.97);
+}
+
+.logo:hover{
+    color: rgb(202, 252, 255);
+}
+
+.right_buttons{
+    display: inline-block;
+    float: right;
+    text-align: right;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.log_out:active{
+    border-radius: 10px;
+    box-shadow:0px 0px 2px 2px red;
+}
+
+.my_account:hover{
+    box-shadow: 0px 0px 2px 2px rgb(202, 252, 255);
+}
+
+.log_out:hover{
+    color: red;
+    box-shadow: 0px 0px 2px 2px rgb(202, 252, 255);
+}
+
+.new_post, .my_account, .log_out{
+    width: auto;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+    outline: none;
+    font-family: Calibri;
+    background-color: white;
+    box-shadow: 0px 0px 7px 2px rgb(233, 244, 255);
+    margin-right: 0%;
+}
+
+.new_post:hover{
+    box-shadow: 0px 0px 2px 2px rgb(202, 252, 255);
+}
+
+.user_info_static{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    width: 245px;
+    height: 52px;
+    background-color: rgba(255,255,255,0.97);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.filters_static{
+    font-family: Calibri;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 120px;
+    width: 245px;
+    height: 170px;
+    text-align: left;
+    background-color: rgba(255,255,255,0.97);
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.filters_static p{
+    font-size: large;
+    text-align: center;
+}
+
+.filters_static form{
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.filters_static button{
+    width: 80px;
+    margin-left: 92px;
+}
+
+#postsearch {
+    width: 143px;
+}
+
+.user_info_static img {
+    padding: 6px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.user_info_static p{
+    font-family: Calibri;
+    padding-right: 10px;
+    float: right;
+    text-align: center;
+}
+
+.posts{
+    font-family: Calibri;
+  /*  position: relative;*/
+    top: 62px;
+    width: 100%;
+    max-width: 500px;
+    margin:  0 auto;
+}
+
+.post{
+    background-color: white;
+    border-radius: 10px;
+    border-top: 1px solid white;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    image-orientation: from-image;
+}
+
+.post img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.post_buttons{
+    position: absolute;
+    display: inline-block;
+    text-align: right;
+    margin: 5px;
+}
+
+.like{
+    background: url("icons/like.png") no-repeat;
+    background-size: contain;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.edit{
+    background: url("icons/edit.png") no-repeat;
+    background-size: contain;
+    margin-left: 192px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.delete{
+    background: url("icons/rubbish-bin.png") no-repeat;
+    background-size: contain;
+    margin-left: 192px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    outline: none;
+    vertical-align: middle;
+    horiz-align: center;
+}
+
+.numOfLikes{
+    margin-top: 35px;
+}
+
+.description{
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+    word-break: break-all;
+}
+
+.post_head{
+    margin: 0px;
+    padding: 0px;
+}
+
+.post_creator{
+    padding-top: 13px;
+    padding-left: 5px;
+    display: inline-block;
+    font-style: italic;
+    font-size: large;
+    width: fit-content;
+}
+
+.right_post_head{
+    font-size: medium;
+    padding: 5px;
+    position: relative;
+    float: right;
+}
+
+.post_time{
+    position: relative;
+    width: fit-content;
+}
+
+.post_place{
+    position: relative;
+    width: fit-content;
+}
+
+footer{
+    width: 100%;
+    color: rgba(0,0,0, 0.2);
+    text-align: center;
+    font-family: Arial;
+    font-size: 15px;
+}
+
+footer:hover{
+    color: black;
+}
+
+.show_more{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    outline: none;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    border: 1px solid #fff;
+    text-align: center;
+    font-size: 100%;
+    text-decoration: none;
+    font-family: Calibri;
+    box-shadow: 0px 0px 7px 7px rgb(233, 244, 255);
+}
+
+.show_more:hover{
+    box-shadow: 0px 0px 2px 2px rgb(202, 252, 255);
+}
+
+@media screen and (max-width: 1030px) {
+    .posts{
+        top: 300px;
+    }
+}
